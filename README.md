@@ -1,2 +1,8 @@
 # MegaSnippet
-BCIT Term 1 Project
+A gaming website - BCIT Term 1 Project
+
+Maximilian Wu
+Spencer Loren
+Ralph Li
+Henry Chu
+Denes Gyorgy
