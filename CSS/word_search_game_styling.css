@@ -1,0 +1,73 @@
+main h1 {
+    text-align: center;
+    font-size: 6vh;
+    margin-top: 4vh;
+    margin-bottom: 2vh;
+}
+
+#gamePlayMain {
+    display: none;
+}
+
+#gamePlayMain div {
+    box-sizing: border-box;
+}
+
+#gameColumn {
+    float: left;
+    width: 45%;
+}
+
+#wordsColumn {
+    float: left;
+    width: 55%;
+}
+
+#wordsColumn div {
+    float: left;
+    padding: 0 4vw;
+}
+
+#wordsColumn div p {
+    margin: 1vh 0;
+}
+
+#wordsColumn div:first-child {
+    border-right: 5px solid black;
+}
+
+#wordSearchBoard {
+    background-color: lavender;
+    border: 10px solid indigo;
+    width: 70vh;
+    height: 70vh;
+    margin-left: auto;
+}
+
+.letterTiles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+#play_again_button {
+    color: white;
+    background-color: red;
+    visibility: hidden;
+    font-size: 4vh;
+    padding: 2vh 2vw;
+}
+
+#gameSetupMain #gameSettingsColumn #easyButton {
+    background-color: forestgreen;
+}
+
+#gameSetupMain #gameSettingsColumn #mediumButton {
+    background-color: yellow;
+    color: black; 
+}
+
+#gameSetupMain #gameSettingsColumn #hardButton {
+    background-color: crimson;
+}

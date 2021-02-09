@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/connect4_styling.css">
+    <link rel="stylesheet" href="../CSS/general_game_settings_page_styling.css">
+    <link rel="stylesheet" href="../CSS/general_page_header_styling.css">
+    <link rel="stylesheet" href="../CSS/general_page_styling.css">
+    <title>Connect 4</title>
+</head>
+<body>
+    <header class="cf">
+        <h3>Mega<span>Snippet</span> - Connect 4</h3>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../leaderboard_page.html">Leaderboard</a></li>
+            <li><a href="../game_repository_page.html">Games</a></li>
+            <li><a href="../achievements_page.html">Achievements</a></li>
+            <li><a href="../events_page.html">Events</a></li>
+            <li><a href="../chat_page.html">Chat</a></li>
+            <li><a href="../friends_page.html">Friends</a></li>
+            <a href="/login.html"><img class="profile-picture" src="../Images/userProfileImages/profileImage1.jpg" alt="Profile Image Default" /></a>
+        </ul>
+    </header>
+    <h1 class="title">CONNECT 4</h1>
+    <div class="gameboard">
+        <div class="cell row-top col-0"></div>
+        <div class="cell row-top col-1"></div>
+        <div class="cell row-top col-2"></div>
+        <div class="cell row-top col-3"></div>
+        <div class="cell row-top col-4"></div>
+        <div class="cell row-top col-5"></div>
+        <div class="cell row-top col-6"></div>
+        <div class="cell row-0 col-0 left-border top-border"></div>
+        <div class="cell row-0 col-1 top-border"></div>
+        <div class="cell row-0 col-2 top-border"></div>
+        <div class="cell row-0 col-3 top-border"></div>
+        <div class="cell row-0 col-4 top-border"></div>
+        <div class="cell row-0 col-5 top-border"></div>
+        <div class="cell row-0 col-6 top-border right-border"></div>
+        <div class="cell row-1 col-0 left-border"></div>
+        <div class="cell row-1 col-1"></div>
+        <div class="cell row-1 col-2"></div>
+        <div class="cell row-1 col-3"></div>
+        <div class="cell row-1 col-4"></div>
+        <div class="cell row-1 col-5"></div>
+        <div class="cell row-1 col-6 right-border"></div>
+        <div class="cell row-2 col-0 left-border"></div>
+        <div class="cell row-2 col-1"></div>
+        <div class="cell row-2 col-2"></div>
+        <div class="cell row-2 col-3"></div>
+        <div class="cell row-2 col-4"></div>
+        <div class="cell row-2 col-5"></div>
+        <div class="cell row-2 col-6 right-border"></div>
+        <div class="cell row-3 col-0 left-border"></div>
+        <div class="cell row-3 col-1"></div>
+        <div class="cell row-3 col-2"></div>
+        <div class="cell row-3 col-3"></div>
+        <div class="cell row-3 col-4"></div>
+        <div class="cell row-3 col-5"></div>
+        <div class="cell row-3 col-6 right-border"></div>
+        <div class="cell row-4 col-0 left-border"></div>
+        <div class="cell row-4 col-1"></div>
+        <div class="cell row-4 col-2"></div>
+        <div class="cell row-4 col-3"></div>
+        <div class="cell row-4 col-4"></div>
+        <div class="cell row-4 col-5"></div>
+        <div class="cell row-4 col-6 right-border"></div>
+        <div class="cell row-5 col-0 bottom-border left-border"></div>
+        <div class="cell row-5 col-1 bottom-border"></div>
+        <div class="cell row-5 col-2 bottom-border"></div>
+        <div class="cell row-5 col-3 bottom-border"></div>
+        <div class="cell row-5 col-4 bottom-border"></div>
+        <div class="cell row-5 col-5 bottom-border"></div>
+        <div class="cell row-5 col-6 bottom-border right-border"></div>
+    </div>
+    <div class = "overlay" id="redWins"><h1>Red Wins</h1></div>
+    <div class = "overlay" id="yellowWins"><h1>Yellow Wins</h1></div>
+    <div class = "overlay" id="tie"><h1>It was a tie</h1></div>
+    <script src="../JavaScript/connect4.js"></script>
+</body>
+</html>

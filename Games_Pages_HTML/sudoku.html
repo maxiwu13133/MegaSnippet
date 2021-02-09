@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8"/>
+        <title>Sudoku</title>
+        <link rel="stylesheet" href="../CSS/sudoku.css"/>
+        <link rel="stylesheet" href="../CSS/general_game_settings_page_styling.css">
+        <link rel="stylesheet" href="../CSS/general_page_header_styling.css">
+        <link rel="stylesheet" href="../CSS/general_page_styling.css">
+        <script src="../JavaScript/sudoku.js"></script>
+    </head>
+    <body>
+        <header class="cf">
+            <h3>Mega<span>Snippet</span> - Sudoku</h3>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../leaderboard_page.html">Leaderboard</a></li>
+            <li><a href="../game_repository_page.html">Games</a></li>
+            <li><a href="../achievements_page.html">Achievements</a></li>
+            <li><a href="../events_page.html">Events</a></li>
+            <li><a href="../chat_page.html">Chat</a></li>
+            <li><a href="../friends_page.html">Friends</a></li>
+            <a href="/login.html"><img  class="profile-picture" src="../Images/userProfileImages/profileImage1.jpg" alt="Profile Image Default" /></a>
+        </ul>
+        </header>
+        <div class="header-sudoku">
+            <div id ="set_game">
+                <div id = "difficulty">
+                    <h2>Choose Your Difficulty: </h2>
+                    <label><input id ="easy" name="difficulty" type="radio" value= "easy" checked>Easy</label>
+                    <label><input id ="medium" name="difficulty" type="radio" value= "medium">Medium</label>
+                    <label><input id ="hard" name="difficulty" type="radio" value= "hard" >Hard</label>
+                </div>
+                <div id="timer">
+                    <h2>Time Spent:</h2><p id = "time_spent" class="hidden"></p>
+                </div>
+                <div id="theme">
+                    <h2>Background Colour:</h2>
+                    <label><input id="White" name="colour" type="radio" value="white" checked>White</label>
+                    <label><input id="Dark" name="colour" type="radio" value="dark">Dark</label>
+                </div>
+            </div>
+            <button id="play_game">Play Game!</button>
+        </div>
+        <p id = "status"></p>
+        <p id = "lives"></p>
+        <section id="game">
+            <div id="board"></div>
+            <div id="numbers" class="hidden">
+                <p id="one">1</p>
+                <p id="two">2</p>
+                <p id="three">3</p>
+                <p id="four">4</p>
+                <p id="five">5</p>
+                <p id="six">6</p>
+                <p id="seven">7</p>
+                <p id="eight">8</p>
+                <p id="nine">9</p>
+            </div>
+        </section>
+    </body>
+    <footer>
+        <p >Thank you for playing!</p>
+    </footer>
+</html>

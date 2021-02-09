@@ -1,0 +1,118 @@
+#rockMainGame {
+    width: 1200px;
+    height: 960px;
+    background-color: lavender;
+
+    margin: 0 auto;
+    margin-top: 25px;
+}
+#playerImg {
+    max-width: 500px;
+    height: 300px;
+    margin: 25px 0;
+    
+}
+#botImg {
+    max-width: 500px;
+    height: 300px;
+    margin: 25px 0;
+    
+}
+#player {
+    float: left;
+    width: 550px;
+    height: 350px;
+    display: inline;
+    background-color: #c4b0eb;
+    margin: 25px 19px;
+    text-align: center;
+    border: 3px solid #9164c4;
+}
+#bot {
+    float: left;
+    width: 550px;
+    height: 350px;
+    display: inline;
+    background-color: #c4b0eb;
+    margin: 25px 19px;
+    text-align: center;
+    border: 3px solid #9164c4;
+}
+#option {
+    text-align: center;
+    color: whitesmoke;
+    font-size: 40px;
+    float: left;
+    width: 1100;
+    height: 400px;
+    margin: 55px;
+    background-color: #8d93f1;
+    border: 3px solid #5e4eb8;
+}
+
+#reset {
+    background-color: #e4767f;
+    color: whitesmoke;
+    font-size: 20px;
+    width: 100px;
+    height: 50px;
+    margin-left: 550px;
+    border: none;
+    border-radius: 5px;
+}
+
+#reset:hover{
+    background-color:#eb9ba1;
+    border: none;
+}
+
+.move{
+    font-size: 40px;
+    float: left;
+    width: 250px;
+    height: 100px;
+    margin-left: 55px;
+    margin-right: 55px;
+    background-color: #e4767f;
+    color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+}
+
+.move:hover{
+    background-color:#eb9ba1;
+}
+
+.move1{
+    font-size: 40px;
+    float: left;
+    width: 250px;
+    height: 100px;
+    margin-left: 230px;
+    margin-top: 15px;
+    background-color: #e4767f;
+    color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+}
+
+.move1:hover{
+    background-color:#eb9ba1;
+}
+
+.move2{
+    font-size: 40px;
+    float: left;
+    width: 250px;
+    height: 100px;
+    margin-left: 110px;
+    margin-top: 15px;
+    background-color:#e4767f;
+    color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+}
+
+.move2:hover{
+    background-color:#eb9ba1;
+}

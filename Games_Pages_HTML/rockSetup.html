@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rock Paper Scissors</title>
+    <link rel='stylesheet' href='../CSS/rock.css'>
+    <link rel="stylesheet" href="../CSS/general_game_settings_page_styling.css">
+    <link rel="stylesheet" href="../CSS/general_page_header_styling.css">
+    <link rel="stylesheet" href="../CSS/general_page_styling.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header class="cf">
+        <h3>Mega<span>Snippet</span> - Rock, Paper, Scissors</h3>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../leaderboard_page.html">Leaderboard</a></li>
+            <li><a href="../game_repository_page.html">Games</a></li>
+            <li><a href="../achievements_page.html">Achievements</a></li>
+            <li><a href="../events_page.html">Events</a></li>
+            <li><a href="../chat_page.html">Chat</a></li>
+            <li><a href="../friends_page.html">Friends</a></li>
+            <a href="/login.html"><img  class="profile-picture"src="../Images/userProfileImages/profileImage1.jpg" alt="Profile Image Default" /></a>
+        </ul>
+    </header>
+
+    <main id="gameSetupMain">
+        <h1>Rock Paper Scissors</h1>
+
+        <div id="gameSettingsColumn">
+            <button onclick="window.location.href='./rock.html'" id="playButton">Play Game</button>
+        </div>
+
+        <div id="gameExplanationColumn">
+            <h2>Welcome to Rock Paper Scissors!</h2>
+            <p>This rock paper scissors mode includes two more moves! The new moves are Lizard and Spock.</p>
+            <h3>Move Guide:</h3>
+            <ul>
+                <li><p>Rock beats: scissors, lizard</p></li>
+                <li><p>Paper beats: rock, spock</p></li>
+                <li><p>Scissors beat: paper, lizard</p></li>
+                <li><p>Lizard beats: paper, spock</p></li>
+                <li><p>Spock beats: rock, scissors</p></li>
+            </ul>
+        </div>
+    </main>
+    <script src="../JavaScript/general_functionality.js"></script>
+    <script src="../JavaScript/game_setup_functionality.js"></script>
+</body>
+</html>

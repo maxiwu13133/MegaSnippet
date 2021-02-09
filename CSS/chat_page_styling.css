@@ -1,0 +1,220 @@
+main div, main img, main input{
+    box-sizing: border-box;
+}
+
+main a {
+    color: black;
+    text-decoration: none;
+}
+
+.widget {
+    width: 20vw;
+    border: 2px solid black;
+    color: black;
+    text-decoration: none;
+}
+
+.widget p {
+    background-color: lavender;
+    margin: 0px;
+    padding: 3vh;
+    text-align: center;
+    font-size: 4vh;
+}
+
+.widget img {
+    display: block;
+    height: 25vh;
+    margin: 2vh auto;
+}
+
+main > div {
+    float: left;
+    height: 89.5vh;
+    border: 1px solid black;
+}
+
+main #serverColumn {
+    width: 5%;
+    background-color: lavender;
+    overflow-y: scroll;
+}
+
+main #serverColumn .serverLine div {
+    width: 2.5vw;
+    height: 2.5vw;
+    border: 1px solid black;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 2vw;
+    margin: 1vw auto;
+    background-color: thistle;
+}
+
+main #serverColumn .serverLine div:hover {
+    border-radius: 25%;
+    background-color: lightskyblue;
+}
+
+main #serverColumn .serverLine #FriendsServer {
+    background-image: url(../Images/friends_server.png);
+    background-size: 100%;
+}
+
+main #serverColumn .serverLine #BCITServer {
+    background-image: url(../Images/BCIT.png);
+    background-size: 100%;
+}
+
+main #serverColumn .serverLine #currentServerMarker {
+    float: left;
+    width: 0.4vw;
+    border: none;
+    border-radius: 0;
+    margin: 0;
+    background-color: mediumpurple;
+}
+
+main #channelColumn {
+    width: 15%;
+}
+
+main #channelColumn h3, main #conversationColumn h3, main #userOnlineColumn h3 {
+    border-bottom: 1px solid black;
+    padding: 2vh 1vw;
+    margin: 0;
+    background-color: lavender;
+}
+
+main #channelColumn #channelList{
+    overflow-y: scroll;
+    height: 82vh;
+}
+
+
+main #channelColumn h4 {
+    list-style-type: none;
+    padding-left: 1vw;
+    margin-top: 2vh;
+    margin-bottom: 0;
+}
+
+main #channelColumn p {
+    margin: 0 1.75vw;
+}
+
+main #channelColumn > div > div {
+    padding: 0.15vw 0;
+}
+
+main #channelColumn #currentTextChannel {
+    background-color: lavender;
+}
+
+main #conversationColumn {
+    width: 65%;
+}
+
+main #conversationColumn #textChat {
+    overflow-y: scroll;
+    height: 71vh;
+    padding: 0 2%;
+}
+
+main #conversationColumn #textChat .messageLine {
+   margin-top: 2vh; 
+   padding: 1vh 0;
+}
+
+main #conversationColumn #textChat .messageLine:hover {
+   background-color: lavender;
+}
+
+main #conversationColumn #textChat .messageLine img {
+    float: left;
+    height: 5vh;
+    width: 5vh;
+    border-radius: 50%;
+    margin: 0 1vw;
+}
+
+main #conversationColumn #textChat .messageLine h4 {
+    margin: 0;
+}
+
+main #conversationColumn #textChat .messageLine p {
+    margin: 0;
+}
+
+main #conversationColumn #inputLine {
+    width: 96%;
+    margin: 0 auto;
+    padding: 2vh 2vw;
+    border-radius: 20px;
+    border: 2px solid black;
+    background-color: lavender;
+}
+
+main #conversationColumn #inputLine input {
+    width: 95%;
+    padding: 1vh 1vw;
+}
+
+main #conversationColumn #inputLine button {
+    margin-left: 0.2vw;
+    border-radius: 50%;
+}
+
+main #userOnlineColumn {
+    width: 15%;
+    overflow-y: scroll;
+}
+
+main #userOnlineColumn .sectionDiv{
+    height: 5vw;
+    border: 2px solid black;
+    margin: 10px;
+    font-size: 20px;
+    background-color: lavender;
+}
+
+main #userOnlineColumn p{
+    display: inline-block;
+}
+
+main #userOnlineColumn img {
+    float: left;
+    height: 3vw;
+    width: 3vw;
+    border-radius: 50%;
+    margin: 12px 5px;
+}
+
+main #userOnlineColumn .statusAway {
+    margin-right: 5px;
+    margin-top: 18px;
+    float: right;
+    display: inline;
+    border-radius: 50%;
+    height: 2vw;
+    width: 2vw;
+    background-color: crimson;
+}
+
+main #userOnlineColumn .statusAway  div{
+    margin: 12px auto;
+    height: 6px;
+    width: 16px;
+    background-color: black;
+}
+
+main #userOnlineColumn .statusOnline {
+    margin-right: 5px;
+    margin-top: 18px;
+    float: right;
+    display: inline;
+    border-radius: 50%;
+    height: 2vw;
+    width: 2vw;
+    background-color:limegreen;
+}

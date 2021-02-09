@@ -1,0 +1,151 @@
+.hidden {
+    display: none;
+}
+
+body.dark{
+    background-color: #333333;
+    color: white;
+}
+
+body.dark .tile{
+    background-color: rgb(134, 134, 206);
+    border-color: rgb(44, 44, 134);
+}
+
+body.dark #numbers p{
+    background-color: rgb(134, 134, 206);
+    border-color: rgb(44, 44, 134);
+}
+
+.header-sudoku{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+body.dark header a{
+    color: white;
+}
+
+body.dark header h3{
+    color: white;
+}
+
+body.dark header h3 span{
+    color: rgb(68, 68, 223);
+}
+
+h1{
+    font-size: 45pt;
+}
+
+#time_spent{
+    margin-left: 20px;
+    padding-top: 2px;
+    font-size: 14pt;
+}
+
+#set_game{
+    display: flex;
+    justify-content: center;
+}
+
+#set_game > * {
+    margin-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    align-items: center;
+}
+
+#play_game {
+    justify-self: center;
+}
+
+#lives {
+    font-weight: bold;
+    text-align: center;
+    font-size: 15pt;
+    padding-right: 50px;
+}
+
+#status {
+    font-weight: bold;
+    text-align: center;
+    font-size: 15pt;
+    padding-right: 50px;
+    color: red;
+}
+
+#game{
+    display: flex;
+    justify-content: center;
+}
+
+#numbers p {
+    border: 3px solid blue;
+    border-radius: 20%;
+    width: 60px;
+    height: 60px;
+    font-size: 40pt;
+    margin-left: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    background-color: lavender;
+}
+
+#board{
+    padding-top: 10px;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    width: 600px;
+    height: 600px;
+}
+
+.tile{
+    border: 1px solid blue;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    margin: 0px;
+    vertical-align: middle;
+    font-size: 40pt;
+    background-color: lavender;
+}
+
+p.selected{
+    background-color: lightblue;
+}
+
+p.incorrect{
+    color:red;
+}
+
+.right_border{
+    border-right: 3px solid rgb(48, 48, 202);
+}
+
+.bottom_border{
+    border-bottom: 3px solid blue;
+}
+
+.left_border{
+    border-left: 3px solid blue;
+}
+
+.top_border{
+    border-top: 3px solid blue;
+}
+
+footer{
+    background-color: lightgray;
+    text-align: center;
+    color: royalblue;
+}
+
+.header-sudoku{
+    text-align: center;
+}

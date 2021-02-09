@@ -1,0 +1,54 @@
+header {
+    box-sizing: border-box;
+    border-bottom: 2px solid grey;
+    padding: 9px 1.5vw;
+    font-size: 27px;
+    height: 66px;
+}
+
+header h3 {
+    color: black;
+    float: left;
+    margin: 0 1vw;
+}
+
+header span {
+    color: blue;
+}
+
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    float: right;
+}
+
+header ul li {
+    float: left;
+}
+
+header ul li a {
+    color: black;
+    display: block;
+    text-align: center;
+    padding: 1.5vh 1vw;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+header ul li a:hover:not(.active) {
+    background-color: lightgray;
+}
+
+header ul li a.active {
+    background-color: lavender;
+}
+
+header ul .profile-picture {
+    width: 40px;
+    height: 40px;
+    margin-left: 0.5vw;
+    border-radius: 50%;
+    object-fit: cover;
+}

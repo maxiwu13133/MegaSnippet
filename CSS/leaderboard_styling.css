@@ -1,0 +1,117 @@
+main h1 {
+    text-align: center;
+    font-size: 6vh;
+    margin-top: 4vh;
+    margin-bottom: 2vh;
+}    
+
+main div {
+    box-sizing: border-box;
+}
+
+#buttonColumn {
+    float: left;
+    width: 25%;
+    text-align: center;
+    padding: 1vh 0;
+}
+
+#buttonColumn h2 {
+    margin-top: 1vh;
+    margin-bottom: 0.5vh;
+}
+
+#leaderboardColumn {
+    float: left;
+    width: 75%;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-right: 0.5vw;
+    font-size: 3vh;
+}
+
+#buttonColumn button {
+    font-size: 3vh;
+    padding: 1.3vh 1vw;
+    border-radius: 4px;
+    margin-bottom: 1vh;
+    background-color: whitesmoke;
+}
+
+#buttonColumn button:hover {
+    cursor: pointer;
+}
+
+#buttonColumn ul {
+    margin: 0;
+    padding: 0;
+}
+
+#buttonColumn ul li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#buttonColumn .oneButtonPerLine li button {
+    width: 90%;
+}
+
+#buttonColumn .twoButtonsPerLine li {
+    display: inline;
+}
+
+#buttonColumn .twoButtonsPerLine li button {
+    width: 44%;
+}
+
+main table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+main td, main th {
+    border: 2px solid black;
+    padding: 1vh 1vh;
+}
+
+.rank {
+    width: 20%;
+}
+
+.profile {
+    width: 50%;
+    text-align: left;
+}
+
+main th{
+    text-align: center !important; 
+}
+
+.profile img, .profile p {
+    display: inline;
+    vertical-align: middle;
+}
+
+.profile span {
+    font-size: 2vh;
+}
+
+.profile img {
+    height: 4.5vh;
+    width: 4.5vh;
+    border-radius: 50%;
+}
+
+#topLeaderboardMarker {
+    float: right;
+}
+
+.score {
+    width: 30%;
+}
+
+button{
+    font-family: Agency;
+}

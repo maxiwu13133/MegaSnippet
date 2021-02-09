@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap 4 CDN -->
+    <link rel="stylesheet" href="../CSS/sudoku.css"/>
+    <link rel="stylesheet" href="../CSS/general_game_settings_page_styling.css">
+    <link rel="stylesheet" href="../CSS/general_page_header_styling.css">
+    <link rel="stylesheet" href="../CSS/general_page_styling.css">
+    <link rel="stylesheet" href="./index.css" class="stylesheet">
+
+    <title>Hangman</title>
+</head>
+<body>
+    <header class="cf">
+        <h3>Mega<span>Snippet</span> - Games</h3>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../leaderboard_page.html">Leaderboard</a></li>
+            <li><a class="active" href="../game_repository_page.html">Games</a></li>
+            <li><a href="../achievements_page.html">Achievements</a></li>
+            <li><a href="../events_page.html">Events</a></li>
+            <li><a href="../chat_page.html">Chat</a></li>
+            <li><a href="../friends_page.html">Friends</a></li>
+            <a href="../login.html"><img class="profile-picture" src="../Images/userProfileImages/profileImage1.jpg" alt="Profile Image Default" /></a>
+        </ul>
+    </header>
+<div class="container"></div>
+<h1 class="text-center">Hangman</h1>
+<div class="float-right">Wrong Guesses: <span id='mistakes'>0</span> of <span id='maxWrong'></span></div>
+<div class="text-center">
+    <img id='hangmanPic' src='./images/0.jpg'>
+    <p>Guess the word!</p>
+    <p id="wordSpotlight">The word to be guessed goes here</p>
+    <div id="keyboard"></div>
+    <button class="btn btn-info" onClick="reset()"> Reset </button>
+</div>
+<script src='./hangman.js'></script>
+</body>
+</html>

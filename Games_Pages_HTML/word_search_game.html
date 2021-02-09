@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEGASNIPPET - Game - Word Search</title>
+    <link rel="stylesheet" href="../CSS/general_page_styling.css">
+    <link rel="stylesheet" href="../CSS/general_page_header_styling.css">
+    <link rel="stylesheet" href="../CSS/general_game_settings_page_styling.css">
+    <link rel="stylesheet" href="../CSS/word_search_game_styling.css">
+</head>
+<body>
+    <!-- Page Header - Only a Navigation Bar-->
+    <header class="cf">
+        <h3>Mega<span>Snippet</span> - Word Search</h3>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../leaderboard_page.html">Leaderboard</a></li>
+            <li><a href="../game_repository_page.html">Games</a></li>
+            <li><a href="../achievements_page.html">Achievements</a></li>
+            <li><a href="../events_page.html">Events</a></li>
+            <li><a href="../chat_page.html">Chat</a></li>
+            <li><a href="../friends_page.html">Friends</a></li>
+            <a href="../login.html"><img src="../Images/userProfileImages/profileImage1.jpg" alt="Profile Image Default" /></a>
+        </ul>
+    </header>
+
+    <!-- The main page for setting up the game -->
+    <main id="gameSetupMain">
+        <h1>Word Search Game Setup</h1>
+        <div id="gameSettingsColumn">
+            <ul class="oneButtonPerLine">
+                <li><button id="easyButton">Easy</button></li>
+                <li><button id="mediumButton">Medium</button></li>
+                <li><button id="hardButton">Hard</button></li>
+            </ul>
+            <button id="playButton">Play Game</button>
+        </div>
+        <div id="gameExplanationColumn">
+            <h2>Welcome to the Word Search Game!</h2>
+            <p>This is the game setup screen, please select a difficulty by clicking one of the buttons to the left and click Play Game.</p>
+            <h3>Difficulty Breakdown:</h3>
+            <ul>
+                <li><p>Easy: 8 words on an 8 by 8 letter board! (Default)</p></li>
+                <li><p>Medium: 15 words on an 15 by 15 letter board!</p></li>
+                <li><p>Hard: 30 words on a 30 by 30 letter board!</p></li>
+            </ul>
+            <!--
+            <h3>How to Play</h3>
+            <ul>
+                <li><p>Find one of the words being searched on teh screen. The words go from top to bottom vertically, left to right horizontally, or 
+                    left to right diagonally.</p></li>
+                <li><p>Click a letter on the board to slect it, the letter background will turn light pruple.</p></li>
+                <li><p>Select another letter around the first.</p></li>
+                <li><p>If you click on an already selected letter you will deselect it.</p></li>
+                <li><p>Once you have selected all teh letters in one of the words you are searching for, the word will be highlighted in the 
+                    list of words on teh righ hand side of the screen</p></li>
+                <li><p>The words being searched will not overlap and no letetr can be used in more than one word.</p></li>
+            </ul>
+            <h3>Example Word Selection In Game</h3>
+            -->
+        </div>
+    </main>
+
+    <!-- The main page for playing the game -->
+    <main id="gamePlayMain">
+        <h1>Word Search Game</h1>
+        <div id="gameColumn">
+            <div id="wordSearchBoard"></div>
+        </div>
+        <div id="wordsColumn" class="cf">
+            <div>
+                
+            </div>
+            <div>
+
+            </div>
+        </div>
+    </main>
+
+    <script src="../JavaScript/general_functionality.js"></script>
+    <!-- <script src="../JavaScript/game_setup_functionality.js"></script> -->
+    <script src="../JavaScript/word_search_script.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+/* Used to make an element disabled, userful to mark features that are under construction */
+.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Fixing the box collapse issue */
+.cf:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* Making sure that the title of each page is consistently displayed */
+main h1 {
+    text-align: center;
+    font-size: 7vh;
+    margin-top: 4vh;
+    margin-bottom: 2vh;
+}
+
+/* Custom font family */
+@font-face{
+    font-family: Agency;
+    src: url(AgencyFB-Bold.ttf);
+}
+
+body{
+    font-family: Agency;
+}

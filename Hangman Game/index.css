@@ -1,0 +1,20 @@
+body{
+    text-align: center;
+}
+
+
+#hangmanPic {
+    height: auto;
+    width: 340px; 
+}
+
+#keyboard button{
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    font-family: Agency;
+}
+
+.text-center{
+    margin: auto;
+}

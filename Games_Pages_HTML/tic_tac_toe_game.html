@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Set the browser's title -->
+    <title>MEGASNIPPET - Game - Tic Tac Toe</title>
+
+    <!-- Link the CSS stylesheets -->
+    <link rel="stylesheet" href="../CSS/general_page_styling.css">
+    <link rel="stylesheet" href="../CSS/general_page_header_styling.css">
+    <link rel="stylesheet" href="../CSS/general_game_settings_page_styling.css">
+    <link rel="stylesheet" href="../CSS/tic_tac_toe_game_styling.css">
+</head>
+<body>
+    <!-- Page Header - Only a Navigation Bar-->
+    <header class="cf">
+        <h3>Mega<span>Snippet</span> - Tic Tac Toe</h3>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../leaderboard_page.html">Leaderboard</a></li>
+            <li><a href="../game_repository_page.html">Games</a></li>
+            <li><a href="../achievements_page.html">Achievements</a></li>
+            <li><a href="../events_page.html">Events</a></li>
+            <li><a href="../chat_page.html">Chat</a></li>
+            <li><a href="../friends_page.html">Friends</a></li>
+            <a href="/login.html"><img class="profile-picture" src="../Images/userProfileImages/profileImage1.jpg" alt="Profile Image Default" /></a>
+        </ul>
+    </header>
+
+    <!-- The main page for setting up the game -->
+    <main id="gameSetupMain">
+        <h1>Tic Tac Toe Game Setup</h1>
+        <div id="gameSettingsColumn">
+            <ul class="twoButtonsPerLine">
+                <li><button id="xButton">Play As X</button></li>
+                <li><button id="oButton">Play As O</button></li>
+            </ul>
+            <ul class="oneButtonPerLine">
+                <li><button id="easyButton">Easy</button></li>
+                <li><button id="mediumButton">Medium</button></li>
+                <li><button id="hardButton">Hard</button></li>
+            </ul>
+            <button id="playButton">Play Game</button>
+        </div>
+        <div id="gameExplanationColumn">
+            <h2>Welcome to the Tic Tac Toe Game!</h2>
+            <p>This is the game setup screen, please select if you would like to play as X or O and select a difficulty by clicking one of the buttons to the left and click Play Game.</p>
+            <p>X plays first (Default), but you can play as O instead!</p>
+            <h3>Difficulty Breakdown:</h3>
+            <ul>
+                <li><p>Easy: The computer will make the best decision 50% of the time! (Default)</p></li>
+                <li><p>Medium: The computer will make the best decision 75% of the time!</p></li>
+                <li><p>Hard: The computer will make the best decision 90% of the time!</p></li>
+            </ul>
+        </div>
+    </main>
+
+    <!-- The main page for playing the game -->
+    <main id="gamePlayMain">
+        <h1>Tic Tac Toe Game</h1>
+        <div id="gameColumn">
+            <div id="ticTacToeBoard">
+                <div class="gameTile" id="tile0"></div>
+                <div class="gameTile" id="tile1"></div>
+                <div class="gameTile" id="tile2"></div>
+                <div class="gameTile" id="tile3"></div>
+                <div class="gameTile" id="tile4"></div>
+                <div class="gameTile" id="tile5"></div>
+                <div class="gameTile" id="tile6"></div>
+                <div class="gameTile" id="tile7"></div>
+                <div class="gameTile" id="tile8"></div>
+            </div>
+        </div>
+        <div id="messageColumn">
+            <p>Welcome to the Tic Tac Toe Game!</p>
+            <p id="messagePrompt"></p>
+            <p id="messageWarning"></p>
+            <button id="playAgainButton">Play Again</button>
+            <button id="newGameButton">New Game</button>
+        </div>
+    </main>
+
+    <!-- Add JavaScript Functionality -->
+    <script src="../JavaScript/general_functionality.js"></script>
+    <script src="../JavaScript/game_setup_functionality.js"></script>
+    <script src="../JavaScript/tic_tac_toe_game_script.js"></script>
+</body>
+</html>

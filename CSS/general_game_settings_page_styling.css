@@ -1,0 +1,79 @@
+#gameSetupMain div{
+    box-sizing: border-box;
+    margin-top: 1vh;
+    float: left;
+}
+
+#gameSetupMain #gameSettingsColumn {
+    width: 40%;
+    text-align: center;
+    padding-top: 1vh;
+}
+
+#gameSetupMain #gameSettingsColumn button {
+    font-size: 4vh;
+    padding: 2vh 2vw;
+    margin: 1vh 0;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(194, 194, 194);
+}
+
+#gameSetupMain #gameSettingsColumn button:hover {
+    cursor: pointer;
+    background-color: rgb(226, 226, 226);
+}
+
+#gameSetupMain #gameSettingsColumn ul {
+    margin: 0;
+    padding: 0;
+}
+
+#gameSetupMain #gameSettingsColumn ul li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#gameSetupMain #gameSettingsColumn .oneButtonPerLine button {
+    width: 80%;
+}
+
+#gameSetupMain #gameSettingsColumn .twoButtonsPerLine li {
+    display: inline;
+}
+
+#gameSetupMain #gameSettingsColumn .twoButtonsPerLine button {
+    width: 40%;
+}
+
+#gameSetupMain #gameSettingsColumn #playButton {
+    background-color: dodgerblue;
+    color: white;
+    width: 60%;
+    border: none;
+}
+
+#gameSetupMain #gameSettingsColumn #playButton:hover{
+    background-color: rgb(102, 212, 255);
+}
+
+#gameSetupMain #gameExplanationColumn {
+    width: 40%;
+    font-size: 3vh;
+    border: 2px solid black;
+    padding: 2vh;
+}
+
+#gameSetupMain #gameExplanationColumn h2 {
+    margin-top: 0;
+}
+
+main{
+    padding-left: 15%;
+}
+
+h1{
+    width: 80%;
+}
+
