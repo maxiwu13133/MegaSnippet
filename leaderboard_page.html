@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEGASNIPPET-Leaderboard</title>
+    <link rel="stylesheet" href="./CSS/general_page_styling.css">
+    <link rel="stylesheet" href="./CSS/general_page_header_styling.css">
+    <link rel="stylesheet" href="./CSS/leaderboard_styling.css">
+</head>
+<body>
+    <!-- Page Header - Only a Navigation Bar -->
+    <header class="cf">
+        <h3>Mega<span>Snippet</span> - Leaderboard</h3>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a class="active" href="./leaderboard_page.html">Leaderboard</a></li>
+            <li><a href="./game_repository_page.html">Games</a></li>
+            <li><a href="./achievements_page.html">Achievements</a></li>
+            <li><a href="./events_page.html">Events</a></li>
+            <li><a href="./chat_page.html">Chat</a></li>
+            <li><a href="./friends_page.html">Friends</a></li>
+            <a href="./login.html"><img class="profile-picture" src="./Images/userProfileImages/profileImage1.jpg" alt="Profile Image Default" /></a>
+        </ul>
+    </header>
+
+    <!-- The main page content -->
+    <main>
+        <h1>Tic Tac Toe Game</h1>
+        <div id="buttonColumn">
+            <h2>Global Vs Class Scores</h2>
+            <ul class="twoButtonsPerLine">
+                <li><button id="globalButton">Global</button></li>
+                <li><button id="classButton">Class</button></li>
+            </ul>
+            <h2>Overall Vs Game Scores</h2>
+            <ul class="oneButtonPerLine">
+                <li><button id="overallButton">Overall Score</button></li>
+                <li><button id="ticTacToeButton">Tic Tac Toe Score</button></li>
+                <li><button id="hangmanButton">Hangman Score</button></li>
+                <li><button id="sudokuButton">Sudoku Score</button></li>
+                <li><button id="connect4Button">Connect 4 Score</button></li>
+                <li><button id="rpsButton">Rock-Paper-Scissors Score</button></li>
+                <li><button id="wordSearchButton">Word Search Score</button></li>
+            </ul>
+        </div>
+        <div id="leaderboardColumn">
+            <table>
+                <tr>
+                    <th class="rank">Rank</th>
+                    <th class="profile">Profile</th>
+                    <th class="score">Score</th>
+                </tr>
+                <tr>
+                    <td class="rank">1</td>
+                    <td class="profile">
+                        <img class="profilePicture" src="./Images/profile_image_default.png" alt="Profile Image Default" />
+                        <p class="profileName">User00000001</p>
+                        <img id="topLeaderboardMarker" src="./Images/King.jpg" alt="Top Scorer" />
+                    </td>
+                    <td class="score">0</td>
+                </tr>
+                <tr>
+                    <td class="rank">2</td>
+                    <td class="profile">
+                        <img class="profilePicture" src="./Images/profile_image_default.png" alt="Profile Image Default" />
+                        <p class="profileName">User00000001</p>
+                    </td>
+                    <td class="score">0</td>
+                </tr>
+                <tr>
+                    <td class="rank">3</td>
+                    <td class="profile">
+                        <img class="profilePicture" src="./Images/profile_image_default.png" alt="Profile Image Default" />
+                        <p class="profileName">User00000001</p>
+                    </td>
+                    <td class="score">0</td>
+                </tr>
+                <tr>
+                    <td class="rank">4</td>
+                    <td class="profile">
+                        <img class="profilePicture" src="./Images/profile_image_default.png" alt="Profile Image Default" />
+                        <p class="profileName">User00000001</p>
+                    </td>
+                    <td class="score">0</td>
+                </tr>
+                <tr>
+                    <td class="rank">5</td>
+                    <td class="profile">
+                        <img class="profilePicture" src="./Images/profile_image_default.png" alt="Profile Image Default" />
+                        <p class="profileName">User00000001</p>
+                    </td>
+                    <td class="score">0</td>
+                </tr>
+                <tr>
+                    <td class="rank">6</td>
+                    <td class="profile">
+                        <img class="profilePicture" src="./Images/profile_image_default.png" alt="Profile Image Default" />
+                        <p class="profileName">User00000001</p>
+                    </td>
+                    <td class="score">0</td>
+                </tr>
+                <tr>
+                    <td class="rank">7</td>
+                    <td class="profile">
+                        <img class="profilePicture" src="./Images/profile_image_default.png" alt="Profile Image Default" />
+                        <p class="profileName">User00000001</p>
+                    </td>
+                    <td class="score">0</td>
+                </tr>
+                <tr>
+                    <td class="rank">8</td>
+                    <td class="profile">
+                        <img class="profilePicture" src="./Images/profile_image_default.png" alt="Profile Image Default" />
+                        <p class="profileName">User00000001</p>
+                    </td>
+                    <td class="score">0</td>
+                </tr>
+                <tr>
+                    <td class="rank">9</td>
+                    <td class="profile">
+                        <img class="profilePicture" src="./Images/profile_image_default.png" alt="Profile Image Default" />
+                        <p class="profileName">User00000001</p>
+                    </td>
+                    <td class="score">0</td>
+                </tr>
+                <tr>
+                    <td class="rank">10</td>
+                    <td class="profile">
+                        <img class="profilePicture" src="./Images/profile_image_default.png" alt="Profile Image Default" />
+                        <p class="profileName">User00000001</p>
+                    </td>
+                    <td class="score">0</td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <script src="./Database Fake/database.js"></script>
+    <script src="./JavaScript/leaderboard_functionality.js"></script>
+</body>
+</html>

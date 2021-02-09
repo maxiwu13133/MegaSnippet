@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEGASNIPPET-Achievements</title>
+    <link rel="stylesheet" href="./CSS/general_page_styling.css">
+    <link rel="stylesheet" href="./CSS/general_page_header_styling.css">
+    <style>
+        #aside {
+            width: 30%;
+            float: left;
+            margin-top: 15%;
+        }
+        #aside button {
+            margin: 30px 10px;
+            font-size: 4vh;
+            padding: 1.3vh 1vw;
+            border-radius: 4px;
+            margin-bottom: 1vh;
+            background-color: whitesmoke;
+            width: 90%;
+            font-family: Agency;
+        }
+        main > div {
+            float: left;
+            height: 89.5vh;
+            width: 35%;
+            border: 1px solid black;
+            text-align: center;
+            margin: 20px 0px;
+        }
+
+        main div, main img {
+            box-sizing: border-box;
+        }
+
+        .scroll {
+            overflow-y: scroll;
+            height: 87%;
+        }
+
+        .achievementLine {
+            padding: 1vh;
+            
+        }
+        
+        .achievementLine .achievementImage {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 5%;
+            margin-right: 2%;
+            float: left;
+            width: 23%;
+            height: 5vw;
+            background-color: lavender;
+         }
+
+        .achievementLine .achievementImage img {
+            width: 100%;
+        }
+
+        .achievementLine .achievementDescription {
+            float: left;
+            text-align: left;
+            width: 75%;
+            height: 5vw;
+            padding: 0.75vh;
+        }
+
+        .achievementLine .achievementDescription h4 {
+            margin: 0;
+            font-size: 3.5vh;
+            color: #0000FF;
+        }
+
+        .achievementLine .achievementDescription p {
+            margin: 0;
+            font-size: 2.5vh;
+        }
+        .hidden {
+            display: none;
+        }
+        .selected {
+            background-color: lavender !important;
+        }
+
+        #incompleteAchievements .achievementImage {
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+    <header class="cf">
+        <h3>Mega<span>Snippet</span> - Achievements</h3>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./leaderboard_page.html">Leaderboard</a></li>
+            <li><a href="./game_repository_page.html">Games</a></li>
+            <li><a class="active" href="./achievements_page.html">Achievements</a></li>
+            <li><a href="./events_page.html">Events</a></li>
+            <li><a href="./chat_page.html">Chat</a></li>
+            <li><a href="./friends_page.html">Friends</a></li>
+            <a href="./login.html"><img class="profile-picture" src="./Images/userProfileImages/profileImage1.jpg" alt="Profile Image Default" /></a>
+        </ul>
+    </header>
+    <div id="aside">
+        <button id="achievements" class="selected">Achievements</button>
+        <button id="titles">Titles</button>
+    </div>
+    <main class="cf">
+        <div id="completeAchievements">
+            <h3>Achievements Complete</h3>
+            <hr />
+            <div class="scroll">
+                
+                <div class="achievementLine cf">
+                    <div class="achievementImage"><img src="./Images/goldstar.png" alt="Crown"></div>
+                    <div class="achievementDescription">
+                        <h4>Welcome</h4>
+                        <p>First time using the website, check your achievements!</p>
+                    </div>
+    
+                </div>
+
+                
+                <div class="achievementLine cf">
+                    <div class="achievementImage"><img src="./Images/goldstar.png" alt="Crown"></div>
+                    <div class="achievementDescription">
+                        <h4>You really like Sudoku, huh?</h4>
+                        <p>Completed 50 games of Sudoku.</p>
+                    </div>
+    
+                </div>
+
+                
+                <div class="achievementLine cf">
+                    <div class="achievementImage"><img src="./Images/goldstar.png" alt="Crown"></div>
+                    <div class="achievementDescription">
+                        <h4>Saviour of Lives</h4>
+                        <p>Completed 100 games of Hangman.</p>
+                    </div>
+    
+                </div>
+
+                <div class="achievementLine cf">
+                    <div class="achievementImage"><img src="./Images/silverstar.png" alt="Crown"></div>
+                    <div class="achievementDescription">
+                        <h4>You really like to play Sudoku</h4>
+                        <p>Completed 30 games of Sudoku.</p>
+                    </div>
+    
+                </div>
+
+                <div class="achievementLine cf">
+                    <div class="achievementImage"><img src="./Images/silverstar.png" alt="Crown"></div>
+                    <div class="achievementDescription">
+                        <h4>Starting to like Words!</h4>
+                        <p>Completed 50 games of Word Search.</p>
+                    </div>
+    
+                </div>
+
+                <div class="achievementLine cf">
+                    <div class="achievementImage"><img src="./Images/bronzestar.png" alt="Crown"></div>
+                    <div class="achievementDescription">
+                        <h4>Above average winner</h4>
+                        <p>Won more than 50% of games in Rock-Paper-Scissors(at least 10 games).</p>
+                    </div>
+    
+                </div>
+
+                <div class="achievementLine cf">
+                    <div class="achievementImage"><img src="./Images/bronzestar.png" alt="Crown"></div>
+                    <div class="achievementDescription">
+                        <h4>Connecting the dots</h4>
+                        <p>Completed 10 games of Connect 4.</p>
+                    </div>
+    
+                </div>
+
+                <div class="achievementLine cf">
+                    <div class="achievementImage"><img src="./Images/bronzestar.png" alt="Crown"></div>
+                    <div class="achievementDescription">
+                        <h4>Tic-Toe-Tac?</h4>
+                        <p>Won 15 games of Tic-Tac-Toe.</p>
+                    </div>
+    
+                </div>
+                
+            </div>
+        </div>
+        <div id="incompleteAchievements">
+            <h3>Achievements Incomplete</h3>
+            <hr />
+            <div class="scroll">
+                <div class="achievementLine cf">
+                    <div class="achievementImage"><img src="./Images/goldstar.png" alt="Crown"></div>
+                    <div class="achievementDescription">
+                        <h4>Word Lover</h4>
+                        <p>Completed 100 games of Word Search.</p>
+                        <progress id="file" value="78" max="100"> 94% </progress>
+                    </div>
+    
+                </div>
+
+                <div class="achievementLine cf">
+                    <div class="achievementImage"><img src="./Images/bronzestar.png" alt="Crown"></div>
+                    <div class="achievementDescription">
+                        <h4>MegaSnippet User</h4>
+                        <p>Logged in 7 days consecutively.</p>
+                        <progress id="file" value="4" max="7"> 46% </progress>
+                    </div>
+                </div>
+
+                <div class="achievementLine cf">
+                    <div class="achievementImage"><img src="./Images/silverstar.png" alt="Crown"></div>
+                    <div class="achievementDescription">
+                        <h4>MegaSnippet Gamer</h4>
+                        <p>Logged in 30 days consecutively.</p>
+                        <progress id="file" value="4" max="30"> 32% </progress>
+                    </div>
+    
+                </div>
+
+                <div class="achievementLine cf">
+                    <div class="achievementImage"><img src="./Images/goldstar.png" alt="Crown"></div>
+                    <div class="achievementDescription">
+                        <h4>MegaSnippet God</h4>
+                        <p>Logged in 100 days consecutively.</p>
+                        <progress id="file" value="4" max="100"> 0% </progress>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="completeTitles" class="hidden">
+            <h3>Titles Complete</h3>
+            <hr />
+            <div class="scroll">
+                <div class="achievementLine cf">
+                    <div class="achievementImage"><img src="./Images/crownAchievement.png" alt="Crown"></div>
+                    <div class="achievementDescription">
+                        <h4>Emperor/Empress of MegaSnippet</h4>
+                        <p>First place in majority of games in Global Scores.</p>
+                    </div>
+    
+                </div>
+
+                <div class="achievementLine cf">
+                    <div class="achievementImage"><img src="./Images/crownAchievement.png" alt="Crown"></div>
+                    <div class="achievementDescription">
+                        <h4>Tic-Tac Champion</h4>
+                        <p>First place in Class Score for Tic-Tac-Toe.</p>
+                    </div>
+    
+                </div>
+
+                <div class="achievementLine cf">
+                    <div class="achievementImage"><img src="./Images/crownAchievement.png" alt="Crown"></div>
+                    <div class="achievementDescription">
+                        <h4>Rock-Paper-Scissors Master</h4>
+                        <p>First place in Class Score for Rock-Paper-Scissors.</p>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+        <div id="incompleteTitles" class="hidden">
+            <h3>Titles Incomplete</h3>
+            <hr />
+            <div class="scroll">
+                <div class="achievementLine cf">
+                    <div class="achievementImage"><img src="./Images/crownAchievement.png" alt="Crown"></div>
+                    <div class="achievementDescription">
+                        <h4>King of Word Search</h4>
+                        <p>First place in Class Score for Word Search</p>
+                    </div>
+    
+                </div>
+
+                <div class="achievementLine cf">
+                    <div class="achievementImage"><img src="./Images/crownAchievement.png" alt="Crown"></div>
+                    <div class="achievementDescription">
+                        <h4>God of Sudoku</h4>
+                        <p>First place in Global Score for Sudoku</p>
+                    </div>
+    
+                </div>
+
+                <div class="achievementLine cf">
+                    <div class="achievementImage"><img src="./Images/crownAchievement.png" alt="Crown"></div>
+                    <div class="achievementDescription">
+                        <h4>God of Connections</h4>
+                        <p>First place in Global Score for Connect 4</p>
+                    </div>
+                
+                </div>   
+
+                <div class="achievementLine cf">
+                    <div class="achievementImage"><img src="./Images/crownAchievement.png" alt="Crown"></div>
+                    <div class="achievementDescription">
+                        <h4>Master of Connections</h4>
+                        <p>First place Class Score for Connect 4</p>
+                </div>
+                
+                </div>
+                
+                <div class="achievementLine cf">
+                    <div class="achievementImage"><img src="./Images/crownAchievement.png" alt="Crown"></div>
+                    <div class="achievementDescription">
+                        <h4>Friend Maker</h4>
+                        <p>Made 100 friends</p>
+                        <progress id="file" value="50" max="100"> 0% </progress>
+                </div>
+    
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src = "JavaScript/achievements_page.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEGASNIPPET-Games</title>
+    <link rel="stylesheet" href="./CSS/general_page_styling.css">
+    <link rel="stylesheet" href="./CSS/general_page_header_styling.css">
+    <style>
+        main {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            justify-content: space-evenly;
+            padding: 3vh;
+            grid-row-gap: 3vh;
+        }
+
+        main a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .widget {
+            width: 22vw;
+            border: 2px solid black;
+            color: black;
+            text-decoration: none;
+        }
+
+        .widget p {
+            background-color: lavender;
+            margin: 0px;
+            padding: 3vh;
+            text-align: center;
+            font-size: 4vh;
+        }
+
+        .widget img {
+            display: block;
+            height: 25vh;
+            margin: 2vh auto;
+        }
+    </style>
+</head>
+<body>
+    <header class="cf">
+        <h3>Mega<span>Snippet</span> - Games</h3>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./leaderboard_page.html">Leaderboard</a></li>
+            <li><a class="active" href="./game_repository_page.html">Games</a></li>
+            <li><a href="./achievements_page.html">Achievements</a></li>
+            <li><a href="./events_page.html">Events</a></li>
+            <li><a href="./chat_page.html">Chat</a></li>
+            <li><a href="./friends_page.html">Friends</a></li>
+            <a href="./login.html"><img class="profile-picture" src="./Images/userProfileImages/profileImage1.jpg" alt="Profile Image Default" /></a>
+        </ul>
+    </header>
+    <main>
+        <a href="./Games_Pages_HTML/tic_tac_toe_game.html"><div class="widget">
+            <p>Tic Tac Toe</p>
+            <img src="./Images/tic-tac-toe-widget.png" alt="Tic Tac Toe Widget">
+        </div></a>
+        <a href="./Hangman Game/index.html"><div class="widget">
+            <p>Hangman</p>
+            <img src="./Images/hangman-widget.png" alt="Hangman Widget">
+        </div></a>
+        <a href="./Games_Pages_HTML/sudoku.html"><div class="widget">
+            <p>Sudoku</p>
+            <img src="./Images/sudoku-widget.png" alt="Sudoku Widget">
+        </div></a>
+        <a href="./Games_Pages_HTML/connect4.html"><div class="widget">
+            <p>Connect 4</p>
+            <img src="./Images/connect4-widget.png" alt="Connect 4 Widget">
+        </div></a>
+        <a href="./Games_Pages_HTML/rockSetup.html"><div class="widget">
+            <p>Rock-Paper-Scissors</p>
+            <img src="./Images/rock-paper-scissors-widget.png" alt="Rock-Paper-Scissors Widget">
+        </div></a>
+        <a href="./Games_Pages_HTML/word_search_game.html"><div class="widget">
+            <p>Word Search</p>
+            <img src="./Images/word-search-widget.png" alt="Word Search Widget">
+        </div></a>
+    </main>
+</body>
+</html>

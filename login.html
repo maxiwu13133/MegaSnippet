@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./CSS/general_page_header_styling.css">
+    <link rel="stylesheet" href="./CSS/general_page_styling.css">
+    <style>
+        body{
+            font-family: Agency;
+            text-align: center;
+        }
+        h1{
+            font-size: 75px;
+            margin: 30px;
+        }
+        div{
+            width: 650px;
+            margin: auto;
+            background-color: rgb(212, 212, 212);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        label{
+            font-size: 30px;
+            margin-right: 10px;
+        }
+        input{
+            font-size: 20px;
+            border: none;
+            font-family: Agency;
+            width: 250px;
+        }
+        button{
+            background-color: rgb(185, 185, 255);
+            font-family: Agency;
+            border: none;
+            font-size: 30px;
+            padding: 5px;
+            width: 100px;
+            color: rgb(38, 38, 219);
+            border-radius: 5px;
+        }
+        button:hover{
+            background-color: rgb(204, 204, 250);
+            color: rgb(78, 78, 255);
+        }
+        p{
+            display: inline;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header class="cf">
+        <h3>Mega<span>Snippet</span></h3>
+    </header>
+    <h1>Login</h1>
+        <div>
+            <form>
+                <label>Username</label>
+                <input type="text" name='username' placeholder="Username/Email"><br> <br>
+            
+                <label>Password</label>
+                <input type="password" name='password' placeholder="Password"><br><br>
+            </form>
+            <button onclick="login()">Login</button> <br> <br> 
+            <p>New user?</p>
+            <a href="#">Sign up!</a>
+        </div>
+        <script>
+            let login = () => {
+                location.replace('./index.html')
+            }
+        </script>
+</body>
+</html>

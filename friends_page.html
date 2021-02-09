@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEGASNIPPET-Friends</title>
+    <link rel="stylesheet" href="./CSS/general_page_styling.css">
+    <link rel="stylesheet" href="./CSS/general_page_header_styling.css">
+    <style>
+        main {
+            /* display: grid;
+            grid-template-columns: auto auto auto auto; */
+            justify-content: space-evenly;
+            padding: 3vh;
+            grid-row-gap: 3vh;
+        }
+
+        main a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .widget {
+            width: 20vw;
+            border: 2px solid black;
+            color: black;
+            text-decoration: none;
+        }
+
+        .widget p {
+            background-color: lavender;
+            margin: 0px;
+            padding: 3vh;
+            text-align: center;
+            font-size: 4vh;
+        }
+
+        .widget img {
+            display: block;
+            height: 25vh;
+            margin: 2vh auto;
+        }
+
+        #friendsSection {
+            width: 50vw;
+            margin: auto;
+            /* border: 2px solid black; */
+        }
+
+        #friendsSection .sectionDiv{
+            height: 100px;
+            border: 2px solid black;
+            margin: 10px;
+            font-size: 25px;
+            background-color: lavender;
+        }
+
+        #friendsSection #addFriendsButton {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            font-size: 30px;
+        }
+        
+        .chatButton {
+            text-align: center;
+            border-radius: 10%;
+            height: 50px;
+            width: 75px;
+            font-size: 25px;
+            margin: 25px;
+            display: inline-block;
+        }
+        
+        #addFriendsDiv{
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        #friendsSection p{
+            display: inline-block;
+        }
+
+        #friendsSection img {
+            float: left;
+            height: 70px;
+            width: 70;
+            border-radius: 50%;
+            margin: 15px;
+        }
+
+        #friendsSection .statusAway {
+            margin: 25px;
+            float: right;
+            display: inline;
+            border-radius: 50%;
+            height: 50px;
+            width: 50px;
+            background-color: crimson;
+        }
+
+        #friendsSection .statusAway  div{
+            margin: 20px auto;
+            height: 10px;
+            width: 30px;
+            background-color: black;
+        }
+
+
+        #friendsSection .statusOnline {
+            margin: 25px;
+            float: right;
+            display: inline;
+            border-radius: 50%;
+            height: 50px;
+            width: 50px;
+            background-color:limegreen;
+        }
+
+        .pStatus {
+            float: right;
+            font-style: italic;
+        }
+        
+        #information {
+            display: none;
+        }
+
+        #informationVisible {
+            margin: 10px auto;
+            text-align: center;
+            width: 400px;
+            display: block;
+        }
+
+        #informationVisible input {
+            height: 25px;
+        }
+
+        button{
+            font-family: Agency;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="cf">
+        <h3>Mega<span>Snippet</span> - Friends</h3>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./leaderboard_page.html">Leaderboard</a></li>
+            <li><a href="./game_repository_page.html">Games</a></li>
+            <li><a href="./achievements_page.html">Achievements</a></li>
+            <li><a href="./events_page.html">Events</a></li>
+            <li><a href="./chat_page.html">Chat</a></li>
+            <li><a class="active" href="./friends_page.html">Friends</a></li>
+            <a href="./login.html"><img class="profile-picture" src="./Images/userProfileImages/profileImage1.jpg" alt="Profile Image Default" /></a>
+        </ul>
+    </header>
+    <main>
+        <section id="friendsSection">
+            <div class="sectionDiv">
+                <div id="addFriendsDiv">
+                    <button id="addFriendsButton">+</button>
+                    <p><b>Add Friends</b></p>
+                </div>
+            </div>
+
+            <div id='information'>
+                <form>
+                    <input type='text' id='name' placeholder='User Name' name='name' size='50'>
+                </form>
+                <button id='addButton'>Add</button>
+            </div>
+
+            <div class="sectionDiv">
+                <img src="https://randomuser.me/api/portraits/men/69.jpg">
+                <p>Prajvirdeep</p>
+                <div class="statusOnline"></div>
+                <p class="pStatus">playing Tic Tac Toe</p>
+                <button class="chatButton"><a href="./friends_chat_page.html">chat</a></button>
+            </div>
+
+            <div class="sectionDiv">
+                <img src="https://randomuser.me/api/portraits/women/50.jpg">
+                <p>Mochizuki</p>
+                <div class="statusAway"><div></div></div>
+                <p class="pStatus">Away</p>
+                <button class="chatButton"><a href="./friends_chat_page.html">chat</a></button>
+            </div>
+
+            <div class="sectionDiv">
+                <img src="https://randomuser.me/api/portraits/women/70.jpg">
+                <p>Ling Fei</p>
+                <div class="statusOnline"></div>
+                <p class="pStatus">playing Word Search</p>
+                <button class="chatButton"><a href="./friends_chat_page.html">chat</a></button>
+            </div>
+
+            <div class="sectionDiv">
+                <img src="https://randomuser.me/api/portraits/men/91.jpg">
+                <p>DeVante</p>
+                <div class="statusOnline"></div>
+                <p class="pStatus">Online</p>
+                <button class="chatButton"><a href="./friends_chat_page.html">chat</a></button>
+            </div>
+
+            <div class="sectionDiv">
+                <img src="https://randomuser.me/api/portraits/women/23.jpg">
+                <p>Mary-Jane</p>
+                <div class="statusAway"><div></div></div>
+                <p class="pStatus">Away</p>
+                <button class="chatButton"><a href="./friends_chat_page.html">chat</a></button>
+            </div>
+        </section>
+    </main>
+    <script>
+        let buttonFriends = document.getElementById('addFriendsButton');
+        let buttonSearch = document.getElementById('addButton');
+        let form = document.getElementById('information');
+
+        function createUser(){
+            let div = document.createElement('div');
+            div.setAttribute('class', 'sectionDiv');
+            
+            let img = document.createElement('img');
+            img.src = 'https://randomuser.me/api/portraits/men/' + Math.floor(Math.random() * 100) + '.jpg';
+            
+            let nameValue = document.getElementById('name').value;
+            let userName = document.createElement('p');
+            userName.textContent = nameValue;
+
+            let chat = document.createElement('button');
+            chat.setAttribute('class', 'chatButton');
+            chat.setAttribute('onclick', 'window.location.href="./friends_chat_page.html"');
+            chat.textContent = 'chat';
+
+            let statusIcon = document.createElement('div');
+            statusIcon.setAttribute('class', 'statusOnline');
+
+            let status = document.createElement('p');
+            status.setAttribute('class', 'pStatus');
+            status.textContent = 'Online';
+
+            div.appendChild(img);
+            div.appendChild(userName);
+            div.appendChild(chat);
+            div.appendChild(statusIcon);
+            div.appendChild(status);
+            return div;
+            
+        }
+        buttonFriends.addEventListener('click', function(event){
+            form.setAttribute('id', 'informationVisible');
+            document.getElementsByTagName('input')[0].value = '';
+        })
+
+        buttonSearch.addEventListener('click', function(event){
+            form.setAttribute('id', 'information');
+
+            let section = document.querySelector('section');
+            section.appendChild(createUser());
+        })
+    </script>
+</body>
+</html>

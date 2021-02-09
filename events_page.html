@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEGASNIPPET-Events</title>
+    <link rel="stylesheet" href="./CSS/general_page_styling.css">
+    <link rel="stylesheet" href="./CSS/general_page_header_styling.css">
+    <link rel="stylesheet" href="./CSS/Event.css">
+    <style>
+        main {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            justify-content: space-evenly;
+            padding: 3vh;
+            grid-row-gap: 3vh;
+        }
+
+        main a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .widget {
+            width: 20vw;
+            border: 2px solid black;
+            color: black;
+            text-decoration: none;
+        }
+
+        .widget p {
+            background-color: lavender;
+            margin: 0px;
+            padding: 3vh;
+            text-align: center;
+            font-size: 4vh;
+        }
+
+        .widget img {
+            display: block;
+            height: 25vh;
+            margin: 2vh auto;
+        }
+    </style>
+</head>
+<body>
+    <header class="cf">
+        <h3>Mega<span>Snippet</span> - Events</h3>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./leaderboard_page.html">Leaderboard</a></li>
+            <li><a href="./game_repository_page.html">Games</a></li>
+            <li><a href="./achievements_page.html">Achievements</a></li>
+            <li><a class="active" href="./events_page.html">Events</a></li>
+            <li><a href="./chat_page.html">Chat</a></li>
+            <li><a href="./friends_page.html">Friends</a></li>
+            <a href="./login.html"><img class="profile-picture" src="./Images/userProfileImages/profileImage1.jpg" alt="Profile Image Default" /></a>
+        </ul>
+    </header>
+    <button id="addEvent">Add event +</button>
+    <div id="overlay">
+        <section id="section">
+            <button id="cancel">X</button>
+            <h1>Create an event</h1>
+            <form>
+                <label>Name</label>
+                <input type="text" name="eventname" id="name" required> <br> <br>
+                <label>Date</label>
+                <input type="datetime-local" name="date" id="date" required> <br> <br>
+                <label>Choose a Color</label>
+                <input type="color" name="color" id='color' required> <br> <br>
+                <input type="submit" name="submit" id="submit" value="Confirm">
+            </form>
+        </section>
+    </div>
+    <script src="./JavaScript/Events.js"></script>
+</body>
+</html>

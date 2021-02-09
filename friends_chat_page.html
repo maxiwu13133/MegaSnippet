@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEGASNIPPET-Chat</title>
+    <link rel="stylesheet" href="./CSS/general_page_styling.css">
+    <link rel="stylesheet" href="./CSS/general_page_header_styling.css">
+    <link rel="stylesheet" href="./CSS/chat_page_styling.css">
+</head>
+<body>
+    <header class="cf">
+        <h3>Mega<span>Snippet</span> - Chat</h3>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./leaderboard_page.html">Leaderboard</a></li>
+            <li><a href="./game_repository_page.html">Games</a></li>
+            <li><a href="./achievements_page.html">Achievements</a></li>
+            <li><a href="./events_page.html">Events</a></li>
+            <li><a class="active" href="./chat_page.html">Chat</a></li>
+            <li><a href="./friends_page.html">Friends</a></li>
+            <a href="./login.html"><img class="profile-picture" src="./Images/userProfileImages/profileImage1.jpg" alt="Profile Image Default" /></a>
+        </ul>
+    </header>
+    <main class="cf">
+        <!-- The server column -->
+        <div id="serverColumn">
+            <div class="serverLine">
+                <div id="currentServerMarker"></div>
+                <a href="./friends_chat_page.html"><div id="FriendsServer"></div></a>
+            </div>
+            <div class="serverLine">
+                <a href="./chat_page.html"><div id="BCITServer"></div></a>
+            </div>
+            <div class="serverLine">
+                <div class="newServer">+</div>
+            </div>
+            <div class="serverLine">
+                <div class="newServer">+</div>
+            </div>
+            <div class="serverLine">
+                <div class="newServer">+</div>
+            </div>
+            <div class="serverLine">
+                <div class="newServer">+</div>
+            </div>
+            <div class="serverLine">
+                <div class="newServer">+</div>
+            </div>
+            <div class="serverLine">
+                <div class="newServer">+</div>
+            </div>
+            <div class="serverLine">
+                <div class="newServer">+</div>
+            </div>
+            <div class="serverLine">
+                <div class="newServer">+</div>
+            </div>
+            <div class="serverLine">
+                <div class="newServer">+</div>
+            </div>
+            <div class="serverLine">
+                <div class="newServer">+</div>
+            </div>
+        </div>
+
+        <!-- The server column -->
+        <div id="channelColumn">
+            <h3 id="channelTitle">Friends Server</h3>
+            <div id="channelList">
+                <div id="textChannels">
+                    <div><h4>Friend Chats ></h4></div>
+                    <div id="currentTextChannel"><p># Prajvirdeep</p></div>
+                    <div><p># Mochizuki</p></div>
+                    <div><p># Ling Fei</p></div>
+                    <div><p># DeVante</p></div>
+                    <div><p># Mary-Jane</p></div>
+                    <div><h4>Team Chats ></h4></div>
+                    <div><p># Group D</p></div>
+                    <div><p># MegaSnippet</p></div>
+                </div>
+                <div id="voiceChannels">
+                    <div><h4>Voice Chat ></h4></div>
+                    <div><p>+ Lounge</p></div>
+                    <div><p>+ Conference Room</p></div>
+                    <div><p>+ Study Room</p></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- The conversation column -->
+        <div id="conversationColumn">
+            <h3 id="channelTitle">Prajvirdeep Text Channel</h3>
+            <div id="textChat">
+                <div class="messageLine">
+                    <img src="./Images/profile_image_admin.PNG" alt="Admin Profile Image">
+                    <h4>Admin</h4>
+                    <p>This is the first message in the text channel. Any new messages will be posted below.</p>
+                </div>
+            </div>
+            <div id="inputLine">
+                <input type="text" id="message" value="">
+                <button id="messagePostButton" onclick="postToPage()">^</button>
+            </div>
+        </div>
+
+        <!-- The user online column -->
+        <div id="userOnlineColumn">
+            <h3 id="channelTitle">Server Members</h3>
+            <div class="sectionDiv">
+                <img src="https://randomuser.me/api/portraits/men/69.jpg">
+                <p>Prajvirdeep</p>
+                <div class="statusOnline"></div>
+            </div>
+
+            <div class="sectionDiv">
+                <img src="https://randomuser.me/api/portraits/women/50.jpg">
+                <p>Mochizuki</p>
+                <div class="statusAway"><div></div></div>
+            </div>
+
+            <div class="sectionDiv">
+                <img src="https://randomuser.me/api/portraits/women/70.jpg">
+                <p>Ling Fei</p>
+                <div class="statusOnline"></div>
+            </div>
+
+            <div class="sectionDiv">
+                <img src="https://randomuser.me/api/portraits/men/91.jpg">
+                <p>DeVante</p>
+                <div class="statusOnline"></div>
+            </div>
+
+            <div class="sectionDiv">
+                <img src="https://randomuser.me/api/portraits/women/23.jpg">
+                <p>Mary-Jane</p>
+                <div class="statusAway"><div></div></div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./Database Fake/database.js"></script>
+    <script src = "./JavaScript/chat_page_functionality.js"></script>
+</body>
+</html>

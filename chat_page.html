@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEGASNIPPET-Chat</title>
+    <link rel="stylesheet" href="./CSS/general_page_styling.css">
+    <link rel="stylesheet" href="./CSS/general_page_header_styling.css">
+    <link rel="stylesheet" href="./CSS/chat_page_styling.css">
+</head>
+<body>
+    <header class="cf">
+        <h3>Mega<span>Snippet</span> - Chat</h3>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./leaderboard_page.html">Leaderboard</a></li>
+            <li><a href="./game_repository_page.html">Games</a></li>
+            <li><a href="./achievements_page.html">Achievements</a></li>
+            <li><a href="./events_page.html">Events</a></li>
+            <li><a class="active" href="./chat_page.html">Chat</a></li>
+            <li><a href="./friends_page.html">Friends</a></li>
+            <a href="./login.html"><img class="profile-picture" src="./Images/userProfileImages/profileImage1.jpg" alt="Profile Image Default" /></a>
+        </ul>
+    </header>
+    <main class="cf">
+        <!-- The server column -->
+        <div id="serverColumn">
+            <div class="serverLine">
+                <a href="friends_chat_page.html"><div id="FriendsServer"></div></a>
+            </div>
+            <div class="serverLine">
+                <div id="currentServerMarker"></div>
+                <a href="chat_page.html"><div id="BCITServer"></div></a>
+            </div>
+            <div class="serverLine">
+                <div class="newServer">+</div>
+            </div>
+            <div class="serverLine">
+                <div class="newServer">+</div>
+            </div>
+            <div class="serverLine">
+                <div class="newServer">+</div>
+            </div>
+            <div class="serverLine">
+                <div class="newServer">+</div>
+            </div>
+            <div class="serverLine">
+                <div class="newServer">+</div>
+            </div>
+            <div class="serverLine">
+                <div class="newServer">+</div>
+            </div>
+            <div class="serverLine">
+                <div class="newServer">+</div>
+            </div>
+            <div class="serverLine">
+                <div class="newServer">+</div>
+            </div>
+            <div class="serverLine">
+                <div class="newServer">+</div>
+            </div>
+            <div class="serverLine">
+                <div class="newServer">+</div>
+            </div>
+        </div>
+
+        <!-- The server column -->
+        <div id="channelColumn">
+            <h3 id="channelTitle">BCIT Server</h3>
+            <div id="channelList">
+                <div id="textChannels">
+                    <div><h4>Text Channels ></h4></div>
+                    <div id="currentTextChannel"><p># General</p></div>
+                    <div><p># Games</p></div>
+                    <div><p># Homework</p></div>
+                </div>
+                <div id="voiceChannels">
+                    <div><h4>Voice Chat ></h4></div>
+                    <div><p>+ General</p></div>
+                    <div><p>+ Chat Room 1</p></div>
+                    <div><p>+ Chat Room 2</p></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- The conversation column -->
+        <div id="conversationColumn">
+            <h3 id="channelTitle">General Text Channel</h3>
+            <div id="textChat">
+                <div class="messageLine">
+                    <img src="./Images/profile_image_admin.PNG" alt="Admin Profile Image">
+                    <h4>Admin</h4>
+                    <p>This is the first message in the text channel. Any new messages will be posted below.</p>
+                </div>
+            </div>
+            <div id="inputLine">
+                <input type="text" id="message" value="">
+                <button id="messagePostButton" onclick="postToPage()">^</button>
+            </div>
+        </div>
+
+        <!-- The user online column -->
+        <div id="userOnlineColumn">
+            <h3 id="channelTitle">Server Members</h3>
+            <div class="sectionDiv">
+                <img src="./Images/userProfileImages/profileImage1.jpg">
+                <p>Ralph</p>
+                <div class="statusOnline"></div>
+            </div>
+            <div class="sectionDiv">
+                <img src="./Images/userProfileImages/profileImage2.jpg">
+                <p>Carlie</p>
+                <div class="statusAway"><div></div></div>
+            </div>
+            <div class="sectionDiv">
+                <img src="./Images/userProfileImages/profileImage8.jpg">
+                <p>Prajvirdeep</p>
+                <div class="statusOnline"></div>
+            </div>
+            <div class="sectionDiv">
+                <img src="./Images/userProfileImages/profileImage4.jpg">
+                <p>Mochizuki</p>
+                <div class="statusOnline"></div>
+            </div>
+            <div class="sectionDiv">
+                <img src="./Images/userProfileImages/profileImage5.jpg">
+                <p>Legend</p>
+                <div class="statusOnline"></div>
+            </div>
+            <div class="sectionDiv">
+                <img src="./Images/userProfileImages/profileImage7.jpg">
+                <p>Liliana</p>
+                <div class="statusOnline"></div>
+            </div>
+            <div class="sectionDiv">
+                <img src="./Images/userProfileImages/profileImage3.jpg">
+                <p>Harry</p>
+                <div class="statusAway"><div></div></div>
+            </div>
+            <div class="sectionDiv">
+                <img src="./Images/userProfileImages/profileImage9.jpg">
+                <p>Yeet</p>
+                <div class="statusAway"><div></div></div>
+            </div>
+            <div class="sectionDiv">
+                <img src="./Images/userProfileImages/profileImage10.jpg">
+                <p>Aero</p>
+                <div class="statusOnline"></div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./Database Fake/database.js"></script>
+    <script src = "./JavaScript/chat_page_functionality.js"></script>
+</body>
+</html>
